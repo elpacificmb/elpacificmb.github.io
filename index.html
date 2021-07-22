@@ -2,189 +2,517 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Portfolio | Responsive Web Design</title>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <title>Portfolio</title>
+  <!-- Css Styles -->
+  <!-- === SWIPER CSS === -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+  <!-- === BOX ICONS === -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- === CUSTOM CSS === -->
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://kit.fontawesome.com/7a6a928ce6.js" crossorigin="anonymous"></script>
+
+  
 </head>
 <body>
-  <header>
-    <a href="#home" class="logo">Portfolio</a>
-    <div class="toggle" onclick="toggleMenu();"></div>
-    <ul class="menu">
-      <li><a href="#home" class="activ" onclick="toggleMenu();">Home</a></li>
-      <li><a href="#about" onclick="toggleMenu();">About</a></li>
-      <li><a href="#services" onclick="toggleMenu();">Services</a></li>
-      <li><a href="#work" onclick="toggleMenu();">Work</a></li>
-      <li><a href="#testimonial" onclick="toggleMenu();">Testimonial</a></li>
-      <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
-    </ul>
+  <!-- Site Content -->
+  <!-- === SCROLL TOP === -->
+  <a href="" class="scrolltop" id="scroll-top">
+    <i class="bx bx-chevron-up scrolltop__icon"></i>
+  </a>
+
+  <!-- === HEADER === -->
+  <header class="l-header" id="header">
+    <nav class="nav bd-container">
+      <a href="" class="nav__logo"><img src="img/logo.png" alt="CREST logo" class="logo logo-dark"></a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+          <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-menu"></i>
+      </div>
+
+    </nav>
   </header>
 
-  <section class="banner" id="home">
-    <div class="textBox">
-      <h2>Hello, I'm <br><span>El Pacific M. Binagha</span></h2>
-      <h3>I'm a Front End Web Developer</h3>
-      <a href="#about" class="btn">About Me</a>
-    </div>
-  </section>
+  <!-- === MAIN CONTENT === -->
+  <main class="l-main">
+    <!--===== HOME =====-->
+    <section class="home" id="home">
+      <div class="home__container bd-container bd-grid">
 
-  <section class="about" id="about">
-    <div class="heading">
-      <h2>About Me</h2>
-    </div>
-    <div class="content">
-      <div class="contentBox w50">
-        <h3>I'm a Front End Web Developer</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente asperiores praesentium in consequuntur dolores, excepturi earum itaque.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, est! Maxime consectetur pariatur voluptates ea sed recusandae corporis est dolorum quis dolorem! Voluptatem ad harum ea labore. Recusandae, ipsa temporibus!
-          <br><br>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, repudiandae tenetur. Repudiandae repellendus cum corporis pariatur exercitationem commodi ipsam quod laboriosam et eos, soluta praesentium enim magnam? Consequuntur, facere voluptate.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus facilis qui voluptate soluta? Reprehenderit vitae quam aperiam sapiente fugit dolores numquam ullam sequi est omnis at sunt libero, perspiciatis unde?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, ab quas repudiandae blanditiis, eaque nobis aut vitae suscipit voluptates fugit quo reiciendis delectus. Totam repellendus distinctio laudantium pariatur, ex rerum.
-        </p>
-      </div>
-      <div class="w50">
-        <img src="img/img1.jpg" alt="about" class="img">
-      </div>
-    </div>
-  </section>
+        <div class="home__data">
+          <span class="home__greeting">Hello, My name is</span>
+          <h1 class="home__name">El Pacific M.</h1>
+          <span class="home__profession">Software Developer</span>
+          <a download="" href="pdf/resume.pdf" class="button button-light home__button">My Resume</a>
+        </div>
 
-  <section class="services" id="services">
-    <div class="heading white">
-      <h2>Our Services</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-    </div>
-    <div class="content">
-      <div class="servicesBox">
-        <img src="img/icon1.png" alt="service1">
-        <h2>Web Design</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam pariatur assumenda excepturi iure voluptates molestiae.</p>
-      </div>
-      <div class="servicesBox">
-        <img src="img/icon2.png" alt="service2">
-        <h2>Web Development</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam pariatur assumenda excepturi iure voluptates molestiae.</p>
-      </div>
-      <div class="servicesBox">
-        <img src="img/icon3.png" alt="service3">
-        <h2>Android App</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam pariatur assumenda excepturi iure voluptates molestiae.</p>
-      </div>
-      <div class="servicesBox">
-        <img src="img/icon4.png" alt="service4">
-        <h2>Photography</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam pariatur assumenda excepturi iure voluptates molestiae.</p>
-      </div>
-      <div class="servicesBox">
-        <img src="img/icon5.png" alt="service5">
-        <h2>Content Writing</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam pariatur assumenda excepturi iure voluptates molestiae.</p>
-      </div>
-      <div class="servicesBox">
-        <img src="img/icon6.png" alt="service6">
-        <h2>Video Editing</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam pariatur assumenda excepturi iure voluptates molestiae.</p>
-      </div>
-    </div>
-  </section>
+        <div class="home__social">
+          <a href="https://github.com/elpacificmb" class="home__social-icon"><i class="bx bxl-github"></i></a>
+          <a href="http://linkedin.com/in/elpacific-binagha" class="home__social-icon"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.youtube.com/channel/UCT43PXAxPxTj2LuipHAsrZg" class="home__social-icon"><i class="bx bxl-youtube"></i></a>
+        </div>
 
-  <section class="work" id="work">
-    <div class="heading">
-      <h2>Our Latest Work</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    </div>
-    <div class="content">
-      <div class="workBox">
-        <img src="img/product1.jpg" alt="product1">
-      </div>
-      <div class="workBox">
-        <img src="img/product2.jpg" alt="product2">
-      </div>
-      <div class="workBox">
-        <img src="img/product3.jpg" alt="product3">
-      </div>
-      <div class="workBox">
-        <img src="img/product4.jpg" alt="product4">
-      </div>
-    </div>
-    <div class="heading">
-      <a href="#" class="btn">View More</a>
-    </div>
-  </section>
+        <div class="home__img">
+          <img src="img/home.jpg" alt="">
+        </div>
 
-  <section class="testimonial" id="testimonial">
-    <div class="heading">
-      <h2>Testimonial</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </div>
-    <div class="content">
-      <div class="testimonialBox">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur reprehenderit laboriosam id iste necessitatibus aspernatur nisi. Sit quidem soluta, magni fuga vitae illum. Harum dolore labore aliquam reiciendis ipsum nulla?</p>
-        <h3>Simeone Famous <br><span>Creative Designer</span></h3>
       </div>
-      <div class="testimonialBox">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur reprehenderit laboriosam id iste necessitatibus aspernatur nisi. Sit quidem soluta, magni fuga vitae illum. Harum dolore labore aliquam reiciendis ipsum nulla?</p>
-        <h3>Simeone Famous <br><span>Creative Designer</span></h3>
-      </div>
-    </div>
-  </section>
+    </section>
+    
+    <!--===== ABOUT =====-->
+    <section class="about section bd-container" id="about">
+      <span class="section-subtitle">My history</span>
+      <h2 class="section-title">About me</h2>
+      
+      <div class="about__container bd-grid">
+        <div class="about__data bd-grid">
+          <p class="about__description"><span>I am Software Developer, Network Engineer and Cybersecurity Analyst. <br></span>I have worked in Europe and Africa with International Organizations.
+            With an international background, I have strong oral and written communication skills in English, French, Swahili and German.
+            Enjoying challenges and problem solving tasks, I always like to work in teams, to contribute but also to learn from others. I'm part of the Research, as well as the Backend Team at Hexlen.com</p>
 
-  <section class="contact" id="contact">
-    <div class="heading white">
-      <h2>Contact Us</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    </div>
-    <div class="content">
-      <div class="contactInfo">
-        <h3>Contact Info</h3>
-        <div class="contactInfoBox">
-          <div class="box">
-            <div class="icon">
-              <i class="fa fa-map-marker"></i>
+          <div class="contact__content bd-grid">
+            <div class="contact__box">
+              <span class="about__number">3+</span>
+              <span class="about__achievement">Years of Experience</span>
             </div>
-            <div class="text">
-              <h3>Address</h3>
-              <p>KN 228St, <br>Nyamirambo, Kigali <br>Rwanda</p>
+            <div class="contact__box">
+              <span class="about__number">5+</span>
+              <span class="about__achievement">Projects completed</span>
+            </div>
+            <div class="contact__box">
+              <span class="about__number">1</span>
+              <span class="about__achievement">Best work award</span>
             </div>
           </div>
-          <div class="box">
-            <div class="icon">
-              <i class="fa fa-phone"></i>
+
+        </div>
+        <img src="img/about.jpg" alt="" class="about__img">
+      </div>
+
+    </section>   
+
+    <!--===== QUALIFICATION =====-->
+    <section class="qualification section bd-container">
+      <span class="section-subtitle">Experience and education</span>
+      <h2 class="section-title">Qualification</h2>
+
+      <div class="qualification__container bd-grid">
+
+        <div class="qualification__content">
+          <h2 class="qualification__title">
+            <i class="bx bx-briefcase-alt qualification__title-icon"></i>
+            Work Experience
+          </h2>
+          <div class="bd-grid">
+
+            <div class="qualification__data">
+              <h3 class="qualification__area">Apprentice, Software Developer</h3>
+
+              <div class="qualification__box">
+                <span class="qualification__work">
+                  <i class="bx bx-briefcase-alt qualification__icon"></i>
+                  Rohde & Schwarz | Kigali - Rwanda
+                </span>
+                <span class="qualification__work">
+                  <i class="bx bx-calendar-alt qualification__icon"></i>
+                  Jun 2021 - Aug 2021
+                </span>
+              </div>
             </div>
-            <div class="text">
-              <h3>Phone</h3>
-              <p>507-475-6094</p>
+
+            <div class="qualification__data">
+              <h3 class="qualification__area">Apprentice, Web Developer</h3>
+
+              <div class="qualification__box">
+                <span class="qualification__work">
+                  <i class="bx bx-briefcase-alt qualification__icon"></i>
+                  Andela & Pluralsight | Kigali - Rwanda
+                </span>
+                <span class="qualification__work">
+                  <i class="bx bx-calendar-alt qualification__icon"></i>
+                  Jun 2020 - May 2021
+                </span>
+              </div>
             </div>
+
+            <div class="qualification__data">
+              <h3 class="qualification__area">IT Spacialist</h3>
+
+              <div class="qualification__box">
+                <span class="qualification__work">
+                  <i class="bx bx-briefcase-alt qualification__icon"></i>
+                  UEM | Wuppertal - Germany
+                </span>
+                <span class="qualification__work">
+                  <i class="bx bx-calendar-alt qualification__icon"></i>
+                  Apr 2019 - Mar 2020
+                </span>
+              </div>
+            </div>
+
+            <div class="qualification__data">
+              <h3 class="qualification__area">Regional IT Intern</h3>
+
+              <div class="qualification__box">
+                <span class="qualification__work">
+                  <i class="bx bx-briefcase-alt qualification__icon"></i>
+                  Orange Telecom | Goma- DRC
+                </span>
+                <span class="qualification__work">
+                  <i class="bx bx-calendar-alt qualification__icon"></i>
+                  Jun 2018 - Jan 2019
+                </span>
+              </div>
+            </div>
+
+            <div class="qualification__data">
+              <h3 class="qualification__area">Network Engineer</h3>
+
+              <div class="qualification__box">
+                <span class="qualification__work">
+                  <i class="bx bx-briefcase-alt qualification__icon"></i>
+                  BCG | Bujumbura - Burundi
+                </span>
+                <span class="qualification__work">
+                  <i class="bx bx-calendar-alt qualification__icon"></i>
+                  Oct 2017 - Dec 2017
+                </span>
+              </div>
+            </div>
+
           </div>
-          <div class="box">
-            <div class="icon">
-              <i class="fa fa-envelope-o"></i>
+        </div>
+        <div class="qualification__content">
+          <h2 class="qualification__title">
+            <i class="bx bx-book-bookmark qualification__title-icon"></i>
+            Education
+          </h2>
+
+          <div class="bd-grid">
+
+            <div class="qualification__data">
+              <h3 class="qualification__area">Mobile Web Specialist</h3>
+
+              <div class="qualification__box">
+                <span class="qualification__work">
+                  <i class="bx bx-book-alt qualification__icon"></i>
+                  Google Africa Developers - Online
+                </span>
+                <span class="qualification__work">
+                  <i class="bx bx-calendar-alt qualification__icon"></i>
+                  Jun 2020 - Dec 2020
+                </span>
+              </div>
             </div>
-            <div class="text">
-              <h3>Email</h3>
-              <p>elpacific@exemple.com</p>
+
+            <div class="qualification__data">
+              <h3 class="qualification__area">Telecom Engineering</h3>
+
+              <div class="qualification__box">
+                <span class="qualification__work">
+                  <i class="bx bx-book-alt qualification__icon"></i>
+                  Hope Africa - University
+                </span>
+                <span class="qualification__work">
+                  <i class="bx bx-calendar-alt qualification__icon"></i>
+                  Jan 2015 - Feb 2018
+                </span>
+              </div>
             </div>
+
+            <div class="qualification__data">
+              <h3 class="qualification__area">Math-Physics</h3>
+
+              <div class="qualification__box">
+                <span class="qualification__work">
+                  <i class="bx bx-book-alt qualification__icon"></i>
+                  Majengo - High School
+                </span>
+                <span class="qualification__work">
+                  <i class="bx bx-calendar-alt qualification__icon"></i>
+                  Sept 2007 - Jul 2014
+                </span>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--===== SERVICES =====-->
+    <section class="services section bd-container" id="services">
+      <span class="section-subtitle">What I offer</span>
+      <h2 class="section-title">Services</h2>
+
+      <div class="services__container bd-grid">
+
+        <div class="services__data">
+          <i class="bx bx-palette services__icon"></i>
+          <h3 class="services__title">UI/UX Design</h3>
+          <p class="services__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          <a href="#" class="button">Know More</a>
+        </div>
+        <div class="services__data">
+          <i class="bx bx-laptop services__icon"></i>
+          <h3 class="services__title">Web Development</h3>
+          <p class="services__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          <a href="#" class="button">Know More</a>
+        </div>
+        <div class="services__data">
+          <i class="bx bx-pen services__icon"></i>
+          <h3 class="services__title">Graphic Design</h3>
+          <p class="services__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          <a href="#" class="button">Know More</a>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--===== PROJECT IN MIND =====-->
+    <section class="project section bd-container" id="project">
+      <div class="project__container bg-grid">
+        <div class="project__data">
+          <i class="bx bx-chat project__icon"></i>
+
+          <div>
+            <h2 class="project__title">Project in mind</h2>
+            <p class="project__description">I enjoy creating things that live on the internet.</p>
+          </div>
+          <div>
+            <a href="#" class="button button-white">Hire me</a>
           </div>
         </div>
       </div>
-      <div class="formBox">
-        <form>
-          <h3>Send Message</h3>
-          <input type="text" placeholder="Your Full Name">
-          <input type="email" placeholder="Your Email">
-          <textarea name="" placeholder="Your Message"></textarea>
-          <input type="submit" value="Send">
-        </form>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="copyright">
-    <p>Copyright &copy; 2020 El Pacific Binagha. All Rights Reserved.</p>
+    <!--===== PORTFOLIO =====-->
+    <section class="portfolio section bd-container" id="portfolio">
+      <span class="section-subtitle">My recent works</span>
+      <h2 class="section-title">Portfolio</h2>  
+
+      <div class="portfolio__nav">
+        <span class="portfolio__item active-portfolio" data-filter="all">All</span>
+        <span class="portfolio__item" data-filter=".web">Web</span>
+        <span class="portfolio__item" data-filter=".ux">UI/UX</span>
+        <span class="portfolio__item" data-filter=".app">App</span>
+      </div>
+
+      <div class="portfolio__container bd-grid">
+
+        <div class="portfolio__content mix web">
+          <a href="#"><img src="img/work1.jpg" alt="" class="portfolio__img"></a>
+          <div class="portfolio__data">
+            <span class="portfolio__subtitle">Web Development</span>
+            <a href="#">
+              <h2 class="portfolio__title">New portfolio of work done for a client</h2>
+            </a>
+            <a href="#" class="button button-link">View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio__content mix web">
+          <a href="#"><img src="img/work2.jpg" alt="" class="portfolio__img"></a>
+          <div class="portfolio__data">
+            <span class="portfolio__subtitle">Web Development</span>
+            <a href="#">
+              <h2 class="portfolio__title">New portfolio of work done for a client</h2>
+            </a>
+            <a href="#" class="button button-link">View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio__content mix ux">
+          <a href="#"><img src="img/work3.jpg" alt="" class="portfolio__img"></a>
+          <div class="portfolio__data">
+            <span class="portfolio__subtitle">UX Design</span>
+            <a href="#">
+              <h2 class="portfolio__title">New portfolio of work done for a client</h2>
+            </a>
+            <a href="#" class="button button-link">View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio__content mix ux">
+          <a href="#"><img src="img/work4.jpg" alt="" class="portfolio__img"></a>
+          <div class="portfolio__data">
+            <span class="portfolio__subtitle">UX Design</span>
+            <a href="#">
+              <h2 class="portfolio__title">New portfolio of work done for a client</h2>
+            </a>
+            <a href="#" class="button button-link">View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio__content mix app">
+          <a href="#"><img src="img/work5.jpg" alt="" class="portfolio__img"></a>
+          <div class="portfolio__data">
+            <span class="portfolio__subtitle">Mobile App</span>
+            <a href="#">
+              <h2 class="portfolio__title">New portfolio of work done for a client</h2>
+            </a>
+            <a href="#" class="button button-link">View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio__content mix app">
+          <a href="#"><img src="img/work6.jpg" alt="" class="portfolio__img"></a>
+          <div class="portfolio__data">
+            <span class="portfolio__subtitle">Mobile App</span>
+            <a href="#">
+              <h2 class="portfolio__title">New portfolio of work done for a client</h2>
+            </a>
+            <a href="#" class="button button-link">View Details</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--===== TESTIMONIAL =====-->
+    <section class="testimonial section bd-container" id="testimonial">
+      <span class="section-subtitle">My clients saying</span>
+      <h2 class="section-title">Testimonial</h2>
+
+      <div class="testimonial__container swiper-container">
+        <div class="swiper-wrapper">
+
+          <div class="testimonial__content swiper-slide">
+            <img src="img/testimonial1.jpg" alt="" class="testimonial__img">
+            <h3 class="testimonial__title">Nick Junior</h3>
+            <span class="testimonial__client">Client</span>
+            <p class="testimonial__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, dignissimos pariatur quisquam hic perspiciatis ipsa consequatur!</p>
+          </div>
+
+          <div class="testimonial__content swiper-slide">
+            <img src="img/testimonial2.jpg" alt="" class="testimonial__img">
+            <h3 class="testimonial__title">Sara Johnson</h3>
+            <span class="testimonial__client">Client</span>
+            <p class="testimonial__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, dignissimos pariatur quisquam hic perspiciatis ipsa consequatur!</p>
+          </div>
+
+          <div class="testimonial__content swiper-slide">
+            <img src="img/testimonial3.jpg" alt="" class="testimonial__img">
+            <h3 class="testimonial__title">Mike Ken</h3>
+            <span class="testimonial__client">Client</span>
+            <p class="testimonial__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, dignissimos pariatur quisquam hic perspiciatis ipsa consequatur!</p>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </section>
+
+    <!--===== CONTACT ME =====-->
+    <section class="contact section bd-container" id="contact">
+      <span class="section-subtitle">For Projects</span>
+      <h2 class="section-title">Contact Me</h2>
+
+      <div class="contact__container bd-grid">
+        <div class="contact__content bd-grid">
+          
+          <div class="contact__box">
+            <i class="bx bx-home contact__icon"></i>
+            <h3 class="contact__title">Location</h3>
+            <span class="contact__description">Kigali - Rwanda</span>
+          </div>
+
+          <div class="contact__box">
+            <i class="bx bx-phone contact__icon"></i>
+            <h3 class="contact__title">Phone</h3>
+            <span class="contact__description">+49-17-8585-002</span>
+          </div>
+
+          <div class="contact__box">
+            <i class="bx bx-envelope contact__icon"></i>
+            <h3 class="contact__title">Email</h3>
+            <span class="contact__description">elpacificmb@gmail.com</span>
+          </div>
+
+          <div class="contact__box">
+            <i class="bx bx-chat contact__icon"></i>
+            <h3 class="contact__title">Chat</h3>
+            <div>
+              <a href="https://www.facebook.com/elbinagha.miyisa" class="contact__social"><i class="bx bxl-facebook"></i></a>
+              <a href="http://linkedin.com/in/elpacific-binagha" class="contact__social"><i class="bx bxl-linkedin"></i></a>
+              <a href="https://twitter.com/elpacific_m_bin" class="contact__social"><i class="bx bxl-twitter"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+        <form action="#" class="contact__form">
+
+          <div class="contact__inputs">
+            <input type="text" name="name" placeholder="Name" class="contact__input">
+            <input type="email" name="email" placeholder="Email" class="contact__input">
+          </div>
+
+          <div class="contact__inputs">
+            <input type="text" name="project" placeholder="Project" class="contact__input">
+            <input type="number" name="number" placeholder="Number" class="contact__input">
+          </div>
+
+          <textarea name="message" id="message" cols="0" rows="7" placeholder="Message" class="contact__input"></textarea>
+
+          <input type="submit" value="Send Message" class="button contact__button">
+
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- === FOOTER === -->
+  <footer class="footer">
+    <div class="footer__container bd-container">
+      <h1 class="footer_title">El Pacific M. Binagha</h1>
+      <p class="footer__description">I am passionate about technology, and my mission is to make new technology accessible to everyone in our region.</p>
+
+      <div class="footer__social">
+        <a href="http://linkedin.com/in/elpacific-binagha" class="footer__link"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/elpacificmb" class="footer__link"><i class="bx bxl-github"></i></a>
+        <a href="https://www.youtube.com/channel/UCT43PXAxPxTj2LuipHAsrZg" class="footer__link"><i class="bx bxl-youtube"></i></a>
+        <a href="https://twitter.com/elpacific_m_bin" class="footer__link"><i class="bx bxl-twitter"></i></a>
+        <a href="https://instagram.com/elpacific_m_bin" class="footer__link"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.facebook.com/elbinagha.miyisa" class="footer__link"><i class="bx bxl-facebook-square"></i></a>
+      </div>
+      
+    </div>
+    <p class="footer__copy">&#169; 2021 Elpacific. All Rights Reserved</p>
   </footer>
 
+  <!-- Scripts Js-->
+  <!-- === MIXITUP FILTER === -->
+  <script src="js/mixitup.min.js"></script>
+
+  <!-- === SWIPER JS === -->
+  <script src="js/swiper-bundle.min.js"></script>
+
+  <!-- === GSAP === -->
+  <script src="js/gsap.min.js"></script>
+
+  <!-- === CUSTOM JS === -->
   <script src="js/main.js"></script>
   
 </body>
