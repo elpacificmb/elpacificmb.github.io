@@ -1,1 +1,1 @@
-elpacific.crestelecom.net
+elpacificmb.github.io -> elpacific.crestelecom.net
